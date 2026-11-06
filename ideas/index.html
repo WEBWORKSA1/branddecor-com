@@ -1,0 +1,12 @@
+---
+layout: default
+title: "Branded Décor Idea Guides — Office, Retail, Restaurant, Booth & Signage | BrandDecor"
+description: "In-depth, practical guides to branding physical spaces: office branding, logo walls, murals, window film, retail merchandising, restaurants, trade-show booths, wayfinding and studios."
+---
+<section class="page-hero"><div class="wrap"><span class="eyebrow">Idea guides</span><h1>Branded-space guides</h1><p class="lead">Practical, plain-language guides with real materials, sizes and planning costs. New guides appear here automatically as they're published.</p>
+<div class="field" style="max-width:480px;margin-top:22px"><label for="guideSearch">Search guides</label><input id="guideSearch" type="search" placeholder="e.g. neon, glass, booth, mural"></div></div></section>
+<section style="padding-top:10px"><div class="wrap"><div class="grid g3">
+{% assign guides = site.pages | where: "article", true | sort: "category" %}{% for g in guides %}<a class="card reveal" data-guide href="{{ g.url }}"><span class="tag">{{ g.category }}</span><span class="tag">{{ g.read }} min</span><h3>{{ g.h1 | default: g.title }}</h3><p>{{ g.summary }}</p><span class="more">Read guide →</span></a>
+{% endfor %}</div>
+<p class="notice">{{ guides.size }} guides · updated {{ site.time | date: "%B %-d, %Y" }}</p></div></section>
+<section class="section-alt"><div class="wrap"><div class="band"><div><h2>Want a guide on something specific?</h2><p>Tell us what you're planning. Popular requests become new guides.</p></div><div><form class="js-form" data-subject="Guide request" data-ok="Thanks — we'll consider it for an upcoming guide."><input name="topic" required placeholder="e.g. branding a dental clinic" aria-label="Guide topic" style="margin-bottom:10px"><input name="email" type="email" placeholder="Email (optional)" aria-label="Email" style="margin-bottom:10px"><input class="hp" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true"><button class="btn btn-primary btn-block" type="submit">Request a guide</button><div class="form-msg" role="status"></div></form></div></div></div></section>
