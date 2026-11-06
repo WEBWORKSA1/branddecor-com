@@ -1,0 +1,44 @@
+---
+layout: default
+title: "Logo Wall Visualizer — Preview Your Brand Sign & Get a Cost Range | BrandDecor"
+description: "Type your brand, choose a finish (acrylic, brushed metal, brass, halo-lit, neon, wood or vinyl), a wall and lighting — see it live with a planning cost range and letter size."
+---
+
+<section class="page-hero"><div class="wrap"><span class="eyebrow">Brand Wall Visualizer</span><h1>See your logo wall before you buy it</h1><p class="lead">Type your brand name, pick a finish, wall and lighting. You'll get a live preview, letter size, viewing range and a planning cost range — then send the exact spec to pros for real quotes.</p></div></section>
+<section style="padding-top:10px"><div class="wrap">
+<div class="viz" id="viz">
+<div class="viz-stage" id="vizStage"><div class="wall-tex" id="vizWall"></div>
+<div class="viz-sign" id="vizSign"><div class="name" id="vizName">Your Brand</div><div class="sub" id="vizSub"></div></div>
+<div class="floor"></div><div class="viz-desk"></div><div class="viz-plant"></div></div>
+<div class="viz-ctrl">
+<div class="field"><label for="v-name">Brand name</label><input id="v-name" value="Your Brand" maxlength="28"></div>
+<div class="field"><label for="v-sub">Tagline (optional)</label><input id="v-sub" value="Design Studio" maxlength="40"></div>
+<div class="field"><label for="v-font">Typeface style</label><select id="v-font"><option value="Fraunces,serif">Classic serif</option><option value="Inter,sans-serif">Modern sans</option><option value="Georgia,serif">Editorial</option><option value="'Trebuchet MS',sans-serif">Friendly</option><option value="'Courier New',monospace">Industrial mono</option><option value="'Brush Script MT','Segoe Script',cursive">Script</option></select></div>
+<div class="field"><label for="v-finish">Sign finish</label><select id="v-finish"><option value="acrylic">3D acrylic letters</option><option value="metal">Brushed metal letters</option><option value="gold" selected>Brushed brass / gold</option><option value="halo">Halo-lit stainless</option><option value="neon">LED neon flex</option><option value="wood">Laser-cut wood</option><option value="vinyl">Cut vinyl lettering</option></select></div>
+<div class="field"><label for="v-color">Letter / light colour</label><input id="v-color" type="color" value="#b4532a"></div>
+<div class="field"><label for="v-wall">Wall surface</label><select id="v-wall"><option value="paint">Painted</option><option value="slats">Wood slats</option><option value="brick">Brick</option><option value="concrete">Concrete</option><option value="marble">Marble / stone</option><option value="moss">Textured / moss</option></select></div>
+<div class="field"><label>Wall colour</label><div class="swatches" id="wallSw"><button type="button" data-c="#e9e2d6" class="on" aria-label="Warm white"></button><button type="button" data-c="#2b2b2b" aria-label="Charcoal"></button><button type="button" data-c="#6b4f3a" aria-label="Walnut"></button><button type="button" data-c="#1f3a64" aria-label="Navy"></button><button type="button" data-c="#3a5a40" aria-label="Forest"></button><button type="button" data-c="#b4532a" aria-label="Terracotta"></button><button type="button" data-c="#9a9a96" aria-label="Concrete grey"></button><button type="button" data-c="#f2d7d9" aria-label="Blush"></button></div></div>
+<div class="field"><label for="v-light">Lighting</label><select id="v-light"><option value="even">Even daylight</option><option value="spot">Spot / wash from above</option><option value="dim">Evening / dim</option></select></div>
+<div class="field"><label for="v-width">Sign width: <span id="v-width-out" class="mono">8 ft</span></label><input id="v-width" type="range" min="2" max="20" step="1" value="8"></div>
+</div>
+<div class="viz-out"><div><div style="color:var(--muted);font-size:.9rem">Planning estimate incl. basic installation</div><b id="v-est">—</b><div id="v-cap" style="font-size:.9rem;color:var(--muted)"></div></div>
+<div style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn btn-ghost" id="vizShuffle" type="button">🎲 Surprise me</button><a class="btn btn-primary" href="/get-quotes.html?from=visualizer&amp;project=signs">Get quotes for this spec</a></div></div>
+</div>
+<p class="notice">Estimates are illustrative planning ranges, not quotes. Real prices depend on your region, artwork complexity, wall type, access and permits. The preview is a simplified illustration.</p>
+</div></section>
+
+<section class="section-alt"><div class="wrap article">
+<h2>How to read your result</h2>
+<p><b>Letter height</b> is estimated from your sign width and the number of characters. Shorter names get taller letters at the same width. The viewing range uses the common sign-industry rule of roughly 10 feet of comfortable reading distance per inch of letter height.</p>
+<p><b>The cost range</b> multiplies an approximate sign face area by a typical per-square-foot range for the finish you chose, then adds a basic installation allowance that scales with size. Lit options (halo-lit and neon) also need a power point near the sign — budget an electrician if there isn't one.</p>
+<h3>Choosing a finish</h3>
+<table><thead><tr><th>Finish</th><th>Look</th><th>Best for</th><th>Relative cost</th></tr></thead><tbody>
+<tr><td>Cut vinyl</td><td>Flat, crisp</td><td>Tight budgets, glass, temporary spaces</td><td>$</td></tr>
+<tr><td>3D acrylic</td><td>Clean, dimensional</td><td>Most offices and clinics</td><td>$$</td></tr>
+<tr><td>Laser-cut wood</td><td>Warm, natural</td><td>Cafés, studios, eco brands</td><td>$$</td></tr>
+<tr><td>Brushed metal / brass</td><td>Premium, architectural</td><td>Law, finance, hospitality</td><td>$$$</td></tr>
+<tr><td>LED neon flex</td><td>Glowing, social-friendly</td><td>Restaurants, retail, creators</td><td>$$$</td></tr>
+<tr><td>Halo-lit stainless</td><td>Luxury glow behind letters</td><td>Flagship receptions</td><td>$$$$</td></tr>
+</tbody></table>
+<p>Want more inspiration first? Browse the <a href="/style-lab.html">Style Lab</a> or read the <a href="/ideas/reception-logo-wall-ideas.html">reception logo wall guide</a>.</p>
+</div></section>
