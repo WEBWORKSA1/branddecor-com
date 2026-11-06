@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<section class="page-hero" style="padding-bottom:10px"><div class="wrap article" style="max-width:780px">
+<a href="/ideas/" class="more" style="margin:0 0 14px">← All idea guides</a><br>
+<span class="tag">{{ page.category }}</span><span class="tag">{{ page.read }} min read</span>
+<h1 style="font-size:clamp(2rem,4.4vw,3rem)">{{ page.h1 | default: page.title }}</h1>
+<p class="lead">{{ page.summary }}</p>
+<p class="byline">By the BrandDecor Editorial Team · Updated {{ site.time | date: "%B %-d, %Y" }}</p>
+</div></section>
+<section style="padding-top:0"><div class="wrap article">
+{{ content }}
+<div class="band" style="margin-top:44px"><div><h2 style="font-size:1.6rem">Ready to price your project?</h2><p>Send one brief and get up to 3 free quotes from matched pros.</p></div><div><a class="btn btn-primary btn-block" href="/get-quotes.html{% if page.qs %}?{{ page.qs }}{% endif %}">Get free quotes</a><a class="btn btn-ghost btn-block" style="margin-top:10px;color:#fff;border-color:#4a443c" href="{{ page.tool | default: '/tools.html' }}">Use the free tool</a></div></div>
+<h3 style="margin-top:44px">More guides</h3>
+<div class="grid g2" style="margin-top:14px">{% assign more = site.pages | where: "article", true | sample: 4 %}{% for g in more %}{% if g.url != page.url %}<a class="card" href="{{ g.url }}"><span class="tag">{{ g.category }}</span><h3 style="font-size:1.05rem">{{ g.h1 | default: g.title }}</h3></a>{% endif %}{% endfor %}</div>
+</div></section>

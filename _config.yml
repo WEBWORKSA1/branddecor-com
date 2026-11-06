@@ -1,0 +1,7 @@
+title: BrandDecor — Branded Spaces Hub
+description: Free tools, idea guides and quote matching for branded offices, shops, restaurants, booths and studios.
+url: "https://branddecor.com"
+markdown: kramdown
+kramdown:
+  auto_ids: true
+exclude: [README.md, RESEARCH.md, BUILD-PROMPTS.md]

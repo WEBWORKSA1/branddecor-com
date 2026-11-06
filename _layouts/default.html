@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ page.title | escape }}</title>
+<meta name="description" content="{{ page.description | escape }}">
+<link rel="canonical" href="{{ site.url }}{{ page.url | replace: "index.html", "" }}">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#1d1b18">
+<meta property="og:type" content="{% if page.article %}article{% else %}website{% endif %}">
+<meta property="og:site_name" content="BrandDecor — Branded Spaces Hub">
+<meta property="og:title" content="{{ page.title | escape }}">
+<meta property="og:description" content="{{ page.description | escape }}">
+<meta property="og:url" content="{{ site.url }}{{ page.url | replace: "index.html", "" }}">
+<meta property="og:image" content="{{ site.url }}/assets/img/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="BrandDecor Ideas" href="/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<script>try{var t=localStorage.getItem('bd-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6620975821265271" crossorigin="anonymous"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"{% if page.article %}Article{% else %}WebPage{% endif %}","name":{{ page.title | jsonify }},"description":{{ page.description | jsonify }},"url":"{{ site.url }}{{ page.url | replace: "index.html", "" }}"{% if page.article %},"headline":{{ page.title | jsonify }},"datePublished":"{{ page.date | default: site.time | date_to_xmlschema }}","dateModified":"{{ site.time | date_to_xmlschema }}","author":{"@type":"Organization","name":"BrandDecor Editorial Team"}{% endif %},"publisher":{"@type":"Organization","name":"BrandDecor.com","url":"{{ site.url }}"}}</script>
+</head><body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar" role="note">Contact, if you are interested in this website/domain name/Sponsorship/Advertisement/Partnership — <a href="https://web.works/contact" target="_blank" rel="noopener">web.works/contact</a></div>
+<header class="site"><div class="wrap nav">
+<a class="logo" href="/" aria-label="BrandDecor home"><span class="mark">B</span><span>BrandDecor<small>Branded Spaces Hub</small></span></a>
+<ul class="menu" id="menu"><li><a href="/">Home</a></li><li><a href="/visualizer.html">Visualizer</a></li><li><a href="/tools.html">Tools</a></li><li><a href="/ideas/">Ideas</a></li><li><a href="/style-lab.html">Style Lab</a></li><li><a href="/videos.html">Videos</a></li><li><a href="/directory.html">Directory</a></li><li><a href="/contest.html">Contest</a></li><li><a href="/support.html">Support</a></li></ul>
+<div class="nav-cta"><a class="btn btn-primary btn-sm" href="/get-quotes.html">Get Free Quotes</a>
+<button class="icon-btn" id="themeBtn" aria-label="Toggle light/dark theme">◐</button>
+<button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button></div>
+</div></header>
+<main id="main">
+{{ content }}
+</main>
+<footer class="site"><div class="wrap">
+<div class="foot-grid">
+<div><a class="logo" href="/"><span class="mark">B</span><span>BrandDecor<small style="color:#a59c8e">Branded Spaces Hub</small></span></a>
+<p style="margin-top:14px">Free planning tools, idea guides and vetted quote matching for businesses that want their brand to live on the walls, windows, floors and booths their customers see every day.</p>
+<form class="js-form inline-form" data-subject="Newsletter signup" data-ok="You're in. The Branded Spaces brief lands every other Tuesday." style="margin-top:16px">
+<input type="email" name="email" required placeholder="you@company.com" aria-label="Email for the Branded Spaces brief"><input class="hp" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+<input type="hidden" name="list" value="Branded Spaces brief"><button class="btn btn-primary btn-sm" type="submit">Subscribe</button><div class="form-msg" role="status"></div></form></div>
+<div><h4>Plan</h4><ul><li><a href="/visualizer.html">Brand Wall Visualizer</a></li><li><a href="/tools.html">Calculators</a></li><li><a href="/style-lab.html">Style Lab</a></li><li><a href="/ideas/">Idea Guides</a></li><li><a href="/videos.html">Videos</a></li></ul></div>
+<div><h4>Get it done</h4><ul><li><a href="/get-quotes.html">Get Free Quotes</a></li><li><a href="/directory.html">Pro Directory</a></li><li><a href="/directory.html#list">List Your Business</a></li><li><a href="/careers.html">Careers &amp; Talent</a></li></ul></div>
+<div><h4>Community</h4><ul><li><a href="/contest.html">Brand My Space Contest</a></li><li><a href="/support.html">Support Us</a></li><li><a href="/advertise.html">Advertise &amp; Sponsor</a></li><li><a href="/about.html">About</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
+<div><h4>Legal</h4><ul><li><a href="/privacy.html">Privacy</a></li><li><a href="/terms.html">Terms</a></li><li><a href="/disclaimer.html">Disclaimer</a></li><li><a href="/cookies.html">Cookies</a></li><li><a href="/trademark.html">Trademark &amp; Copyright</a></li></ul></div>
+</div>
+<div class="legal">
+<p><b>Trademark &amp; copyright disclosure:</b> “BrandDecor” is used on this site only as a descriptive domain-name identifier for the general subject of branded décor. No claim of exclusive rights is made to the words “brand” or “decor”, and this site is not affiliated with, endorsed by or sponsored by any company, product or person using a similar name. All third-party names, logos and trademarks mentioned belong to their respective owners and are used for identification only. <a href="/trademark.html">Full disclosure</a>.</p>
+<p>Prices and estimates are general planning information, not quotes or professional advice. Some pages show advertising served by Google AdSense. © <span class="year">2026</span> BrandDecor.com. Original text, tools and design © BrandDecor.com. Last updated {{ site.time | date: "%B %-d, %Y" }}.</p>
+</div></div></footer>
+<div class="mcta"><a class="btn btn-ghost" href="/visualizer.html">Visualize</a><a class="btn btn-primary" href="/get-quotes.html">Free Quotes</a></div>
+<div class="cookie" id="cookie" role="dialog" aria-label="Cookie notice"><p>We use essential storage and, with your consent, cookies from Google to show and measure ads. See our <a href="/cookies.html">Cookie Policy</a>.</p>
+<div class="acts"><button class="btn btn-primary btn-sm" data-cookie="all">Accept</button><button class="btn btn-ghost btn-sm" data-cookie="essential">Essential only</button></div></div>
+<script src="/assets/js/data.js" defer></script>
+<script src="/assets/js/main.js" defer></script>
+</body></html>

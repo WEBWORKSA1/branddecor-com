@@ -1,0 +1,7 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel><title>BrandDecor Idea Guides</title><link>{{ site.url }}/ideas/</link><description>{{ site.description | xml_escape }}</description><lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+{% assign guides = site.pages | where: "article", true %}{% for g in guides %}<item><title>{{ g.h1 | default: g.title | xml_escape }}</title><link>{{ site.url }}{{ g.url }}</link><guid>{{ site.url }}{{ g.url }}</guid><description>{{ g.summary | xml_escape }}</description></item>
+{% endfor %}</channel></rss>
