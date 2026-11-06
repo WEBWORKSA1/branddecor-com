@@ -1,0 +1,79 @@
+---
+layout: default
+title: "Free Signage, Mural, Booth & Branding Cost Calculators | BrandDecor"
+description: "Free calculators: sign letter height by viewing distance, wall mural cost, trade-show booth budget and ROI, brand palette with WCAG contrast, window film and office branding budget."
+---
+
+<section class="page-hero"><div class="wrap"><span class="eyebrow">Free tools</span><h1>Branded-space calculators</h1><p class="lead">Size it, price it and check it before you brief anyone. Every tool runs in your browser and updates as you type.</p></div></section>
+<section style="padding-top:10px"><div class="wrap">
+<div class="tool-tabs" role="tablist">
+<button class="on" data-tool="t-letter" role="tab" aria-selected="true">🔠 Letter height</button>
+<button data-tool="t-mural" role="tab">🎨 Mural cost</button>
+<button data-tool="t-booth" role="tab">🎪 Booth budget &amp; ROI</button>
+<button data-tool="t-palette" role="tab">🎯 Palette + contrast</button>
+<button data-tool="t-film" role="tab">🪟 Window film</button>
+<button data-tool="t-office" role="tab">🏢 Office branding</button>
+</div>
+
+<div class="tool on" id="t-letter">
+<div class="form-card"><h2 style="font-size:1.5rem">Sign letter height by viewing distance</h2>
+<div class="row"><div class="field"><label for="l-dist">Viewing distance</label><input id="l-dist" type="number" min="1" value="60"></div><div class="field"><label for="l-unit">Unit</label><select id="l-unit"><option value="ft">Feet</option><option value="m">Metres</option></select></div></div>
+<div class="field"><label for="l-cond">Viewing conditions</label><select id="l-cond"><option value="1">Standard — good contrast, standing or walking</option><option value="1.25">Low contrast or decorative font</option><option value="1.5">Viewer in a moving vehicle</option><option value="0.85">Bold sans, high contrast, illuminated</option></select></div>
+<p class="notice">Based on two common sign-industry rules: about 1 inch of capital-letter height per 10 feet for comfortable reading, and about 1 inch per 30 feet as the maximum legible distance (the legibility index used by many US sign councils).</p></div>
+<div class="result"><div>Recommended capital-letter height</div><div class="big" id="lh-opt">—</div>
+<dl><dt>Absolute minimum</dt><dd id="lh-min">—</dd><dt>Approx. sign height (1 line + margins)</dt><dd id="lh-sign">—</dd></dl><p id="lh-note"></p>
+<a class="btn btn-primary btn-sm" style="margin-top:16px" href="/get-quotes.html?project=signs">Quote this sign</a></div>
+</div>
+
+<div class="tool" id="t-mural">
+<div class="form-card"><h2 style="font-size:1.5rem">Wall mural &amp; graphics cost estimator</h2>
+<div class="row"><div class="field"><label for="m-w">Wall width (ft)</label><input id="m-w" type="number" min="1" value="16"></div><div class="field"><label for="m-h">Wall height (ft)</label><input id="m-h" type="number" min="1" value="9"></div></div>
+<div class="field"><label for="m-type">Method</label><select id="m-type"><option value="6">Printed vinyl (removable)</option><option value="8" selected>Printed wallcovering (Type II)</option><option value="4">Cut vinyl lettering / shapes</option><option value="3">Printed fabric (SEG / tension)</option><option value="25">Hand-painted mural (artist)</option><option value="12">Acrylic / 3D panel feature</option></select></div>
+<div class="row"><div class="field"><label for="m-design">Design</label><select id="m-design"><option value="0">I have print-ready artwork</option><option value="350" selected>Adapt my brand assets</option><option value="1200">Custom illustration</option></select></div><div class="field"><label for="m-install">Installation</label><select id="m-install"><option value="0">DIY</option><option value="2.5" selected>Pro install — standard wall</option><option value="4">Pro install — textured / high wall</option></select></div></div>
+<div class="field"><label for="m-qty">Number of walls like this</label><input id="m-qty" type="number" min="1" value="1"></div></div>
+<div class="result"><div>Estimated project range</div><div class="big" id="mu-total">—</div>
+<dl><dt>Total area</dt><dd id="mu-area">—</dd><dt>Production</dt><dd id="mu-prod">—</dd><dt>Installation</dt><dd id="mu-inst">—</dd><dt>Design</dt><dd id="mu-design">—</dd><dt>All-in per sq ft</dt><dd id="mu-sqft">—</dd></dl>
+<p>Planning ranges only. Hand-painted pricing varies widely by artist and detail.</p><a class="btn btn-primary btn-sm" style="margin-top:16px" href="/get-quotes.html?project=graphics">Quote this mural</a></div>
+</div>
+
+<div class="tool" id="t-booth">
+<div class="form-card"><h2 style="font-size:1.5rem">Trade-show booth budget &amp; ROI</h2>
+<div class="row"><div class="field"><label for="b-size">Booth size (ft)</label><select id="b-size"><option>10x10</option><option selected>10x20</option><option>20x20</option><option>20x30</option><option>30x30</option></select></div><div class="field"><label for="b-rate">Space rate ($/sq ft)</label><input id="b-rate" type="number" min="0" value="25"></div></div>
+<div class="row"><div class="field"><label for="b-type">Exhibit type</label><select id="b-type"><option value="15">Portable / pop-up</option><option value="45" selected>Modular rental</option><option value="90">Modular purchase</option><option value="160">Custom build</option></select></div><div class="field"><label for="b-shows">Shows per year</label><input id="b-shows" type="number" min="1" value="3"></div></div>
+<div class="field"><label for="b-staff">Staff travelling (3 days each)</label><input id="b-staff" type="number" min="0" value="3"></div>
+<div class="row"><div class="field"><label for="b-leads">Expected leads</label><input id="b-leads" type="number" min="0" value="150"></div><div class="field"><label for="b-close">Close rate (%)</label><input id="b-close" type="number" min="0" max="100" value="5"></div></div>
+<div class="field"><label for="b-deal">Average deal value ($)</label><input id="b-deal" type="number" min="0" value="4000"></div></div>
+<div class="result"><div>Estimated cost per show</div><div class="big" id="bo-total">—</div>
+<dl><dt>Floor space</dt><dd id="bo-space">—</dd><dt>Exhibit (spread over up to 3 shows)</dt><dd id="bo-build">—</dd><dt>Show services, shipping &amp; labour</dt><dd id="bo-serv">—</dd><dt>Staff travel</dt><dd id="bo-staff">—</dd><dt>Graphics &amp; signage</dt><dd id="bo-gfx">—</dd><dt>Cost per lead</dt><dd id="bo-cpl">—</dd><dt>Projected ROI</dt><dd id="bo-roi">—</dd><dt>Annual programme</dt><dd id="bo-year">—</dd></dl>
+<p>Space is often 20–35% of a show budget. Show services are modelled at 60% of space cost.</p><a class="btn btn-primary btn-sm" style="margin-top:16px" href="/get-quotes.html?project=exhibits">Quote this booth</a></div>
+</div>
+
+<div class="tool" id="t-palette">
+<div class="form-card"><h2 style="font-size:1.5rem">Brand palette generator + contrast check</h2>
+<div class="row"><div class="field"><label for="p-base">Your brand colour</label><input id="p-base" type="color" value="#b4532a"></div><div class="field"><label for="p-mode">Harmony</label><select id="p-mode"><option value="mono">Tonal (safe, elegant)</option><option value="complement">Complementary (bold)</option><option value="analogous">Analogous (warm, cohesive)</option><option value="triad">Triadic (playful)</option></select></div></div>
+<div class="palette" id="pal"></div><p class="notice">Click a colour to copy its hex code. Use colour 1 for walls, 3 for brand moments, 5 for text.</p>
+<label>CSS variables</label><pre class="mono" id="pa-css" style="white-space:pre-wrap;font-size:.8rem;background:var(--bg);padding:12px;border-radius:10px;border:1px solid var(--line)"></pre></div>
+<div class="result"><div>Accessibility (WCAG 2.x contrast)</div>
+<dl style="margin-top:12px"><dt>Text (5) on wall (1)</dt><dd id="pa-text">—</dd><dt>White text on brand colour</dt><dd id="pa-white">—</dd><dt>Brand colour on dark (5)</dt><dd id="pa-dark">—</dd></dl>
+<p>4.5:1 passes AA for normal text; 3:1 passes for large text (signage headlines). Contrast matters as much as letter size for readable signs.</p></div>
+</div>
+
+<div class="tool" id="t-film">
+<div class="form-card"><h2 style="font-size:1.5rem">Window &amp; glass film calculator</h2>
+<div class="row"><div class="field"><label for="f-panes">Number of panes</label><input id="f-panes" type="number" min="1" value="6"></div><div class="field"><label for="f-cov">Coverage (%)</label><input id="f-cov" type="number" min="5" max="100" value="100"></div></div>
+<div class="row"><div class="field"><label for="f-w">Pane width (in)</label><input id="f-w" type="number" min="1" value="48"></div><div class="field"><label for="f-h">Pane height (in)</label><input id="f-h" type="number" min="1" value="84"></div></div>
+<div class="field"><label for="f-type">Film type</label><select id="f-type"><option value="9">Plain frosted privacy</option><option value="14" selected>Frosted with cut logo / pattern</option><option value="16">Printed storefront graphic</option><option value="12">Perforated one-way vision</option><option value="10">Solar / heat control</option></select></div></div>
+<div class="result"><div>Installed estimate</div><div class="big" id="fi-total">—</div><dl><dt>Film area</dt><dd id="fi-area">—</dd><dt>DIY material</dt><dd id="fi-rolls">—</dd></dl><p>Glass doors and walls usually need a manifestation band at eye level (roughly 2'9"–5'3" from the floor in many codes) so people don't walk into them.</p><a class="btn btn-primary btn-sm" style="margin-top:16px" href="/get-quotes.html?project=glass">Quote this film</a></div>
+</div>
+
+<div class="tool" id="t-office">
+<div class="form-card"><h2 style="font-size:1.5rem">Office branding budget</h2>
+<div class="row"><div class="field"><label for="o-sqft">Office size (sq ft)</label><input id="o-sqft" type="number" min="100" value="4000"></div><div class="field"><label for="o-emp">Employees</label><input id="o-emp" type="number" min="1" value="30"></div></div>
+<div class="field"><label for="o-level">Branding level</label><select id="o-level"><option value="0.6">Light — key walls and glass</option><option value="1.5" selected>Standard — culture walls in every zone</option><option value="3.5">Immersive — floors, ceilings, custom builds</option></select></div>
+<div class="row"><div class="field"><label for="o-rooms">Meeting rooms to brand</label><input id="o-rooms" type="number" min="0" value="4"></div><div class="field"><label for="o-recep">Reception sign</label><select id="o-recep"><option value="800">Acrylic / vinyl</option><option value="2500" selected>Brushed metal</option><option value="6000">Halo-lit / feature wall</option></select></div></div></div>
+<div class="result"><div>Estimated office branding range</div><div class="big" id="of-total">—</div><dl><dt>Reception</dt><dd id="of-recep">—</dd><dt>Meeting-room film &amp; names</dt><dd id="of-rooms">—</dd><dt>Walls &amp; environmental graphics</dt><dd id="of-walls">—</dd><dt>Per employee</dt><dd id="of-emp">—</dd></dl><a class="btn btn-primary btn-sm" style="margin-top:16px" href="/get-quotes.html?space=Office&amp;project=interiors">Quote my office</a></div>
+</div>
+<p class="notice">All results are general planning estimates in USD, not quotes. Prices vary by region, materials, access, permits and supplier.</p>
+</div></section>
+
+<section class="section-alt"><div class="wrap"><div class="band"><div><h2>Numbers look right? Get real prices.</h2><p>Send your project to up to 3 matched pros — free, with no obligation.</p></div><div><a class="btn btn-primary btn-block" href="/get-quotes.html">Get free quotes</a></div></div></div></section>
